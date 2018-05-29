@@ -1,6 +1,8 @@
+#ba1l
+
 def SymbolToNumber (s):
       if s == 'A':
-        return
+        return 0
       elif s == 'C':
         return 1
       elif s == 'G':
@@ -8,13 +10,65 @@ def SymbolToNumber (s):
       elif s == 'T':
        return 3
        
-def PatternToNumber (Text):
- if len(Text)== 0;
-    return 0
- symbol = Text[-1:]
- prefix= Text[: 1]
- return 4* PatternToNUmber(prefix)+ SymbolToNumber(symbol)
- 
+       
+#recursive function to convert PatternToNumber       
+def PatternToNummber(Pattern):
+            if Pattern =="":
+                    return 0
+           symbol = Pattern[-1:]
+           prefix = Pattern[:-1]
+           return 4 * PatternToNumber(prefix) + SymbolToNumber(symbol)
+print(PatternToNumber("CCGCTCAGACACGGCCTCCATTGA"))           
+      
+      
+       
+#ba1m
+
+def NumberToSymbol(s):
+        if s ==0;
+                  return "A"
+        elif s == 1:
+                  return "C"
+        elif s == 2:
+                  return "G"
+        elif s == 3:
+                  return "T"
+
+def NumberToPattern(index,k):
+            if k == 1:
+                  return NumberToSymbol(index)
+            prefix index = index /4
+            r = index %4
+            symbol = NumberToSymbol(r)
+            PrefixPattern = NumberToPattern(prefixIndex, k-1)
+            return prefixPattern + Symbol
+        print(NumberToPattern(6915,9))   
+        
+        
+        
+  def SymbolToNumber(s):
+            if s == 'A':
+                  return 0
+            elif s == 'c':
+                  return 1
+            elif s == 'G':
+                  return 2
+            elif s == 'T':
+                  return 3
+                  
+#recursive function to convert PatternToNumber
+def PatternToNumber(Pattern):
+            if Pattern =='':
+                  return 0
+            symbol = Pattern[-1:]
+            prefix = Pattern[:-1]
+            return 4 * PatternToNumber(prefix) + SymbolToNumber(symbol)
+            
+            
+
+
+            
+                  
  
  
  
