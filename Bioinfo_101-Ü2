@@ -1,0 +1,30 @@
+def SymbolToNumber (s):
+      if s == 'A':
+        return
+      elif s == 'C':
+        return 1
+      elif s == 'G':
+        return 2
+      elif s == 'T':
+       return 3
+       
+def PatternToNumber (Text):
+ if len(Text)== 0;
+    return 0
+ symbol = Text[-1:]
+ prefix= Text[: 1]
+ return 4* PatternToNUmber(prefix)+ SymbolToNumber(symbol)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
